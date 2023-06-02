@@ -60,6 +60,40 @@ section, footer {
   align-items: center;
 }
 
+.home .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+}
+
+
+/* Animação menu navbar (Open and Closed */
+
+.home .menu div {
+  width: 50px;
+  height: 8px;
+  background: var(--section-projects-bg-color);
+  border-radius: 4px;
+  transition: .5s ease;
+}
+
+.menu-first{
+  transform: rotate(45deg) translate(12px);
+
+}
+
+.menu-second{
+  transform: rotate(-45deg) translate(10px);
+}
+
+.menu-third{
+  transform: rotate(-45deg) translateY(-11px) translate(20px);
+}
+
+/* fim da animação */
+
+
 h1{
   font-size: 4em;
   font-weight: 900;
